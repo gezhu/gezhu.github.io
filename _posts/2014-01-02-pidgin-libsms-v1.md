@@ -52,6 +52,7 @@ cd到源码目录下，并输入
 向作者致敬：simpleyyt@gmail.com
 
 
+
 github地址：https://github.com/Simpleyyt/pidgin-libsms
 
 百度网盘：http://pan.baidu.com/s/1mg0nqqc
