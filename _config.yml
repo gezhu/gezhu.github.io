@@ -2,8 +2,7 @@ markdown: rdiscount
 
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
-
-permalink: /:title/
+permalink: date
 url: http://gezhu.github.io
 name: Gezhu
 author: gezhu
