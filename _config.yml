@@ -2,7 +2,7 @@ markdown: rdiscount
 
 lsi: false
 exclude: [LICENSE, CNAME, README.md, .gitignore]
-permalink: date
+permalink: none
 url: http://gezhu.github.io
 name: Gezhu
 author: gezhu
@@ -11,7 +11,7 @@ email: zhulianuha121@qq.com
 duoshuo: gezhu
 #beian: 浙ICP备12026616号
 #cnzz: 119959
-weibo: 2067815867
+#weibo: 2067815867
 github: gezhu
 pygments: true
 safe: true
