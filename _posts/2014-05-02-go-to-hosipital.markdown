@@ -1,8 +1,8 @@
 ---
 layout: post
-title: 在git-pages上的第一篇博客
+title: 去医院
 categories:
-- blog
+- life
 ---
 
 这次终于搞定了，jekyll搭建好了. 以后只关注与博客内容（虽然目前没多少内容）！
