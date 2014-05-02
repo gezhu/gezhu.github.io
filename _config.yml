@@ -12,7 +12,7 @@ theme:
 
   # Profile links on the left sidebar, leave blank to ignore
   social:
-    github: zhulianhua
+    github: gezhu
     #bitbucket: philipj
     #hacker_news: swanson
     #stackexchange: 348619
@@ -20,12 +20,12 @@ theme:
     #twitter: _swanson
     #facebook: zuck
     #tumblr: animalygifs
-    linkedin: cn.linkedin.com/pub/lianhua-zhu/51/b56/b35/
+    #linkedin: cn.linkedin.com/pub/lianhua-zhu/51/b56/b35/
     #gplus: 110552447039675960964
 
   # "Hi, I'm _______"
-  name: Lianhua Zhu
-  email: zhulianhua121@gmail.com
+  name: Gezhu
+  email: zhulianhua121@qq.com
   tagline: "weak opinions, strongly held"
 
   # Google Analytics key, leave blank to ignore
