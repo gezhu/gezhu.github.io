@@ -5,7 +5,7 @@ exclude: [LICENSE, CNAME, README.md, .gitignore]
 
 permalink: /:title/
 url: http://gezhu.github.io
-name: Acow
+name: Gezhu
 author: gezhu
 #qq: 1135558183
 email: zhulianuha121@qq.com
