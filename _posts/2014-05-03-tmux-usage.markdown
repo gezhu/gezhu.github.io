@@ -29,6 +29,7 @@ tmux里面所有操作都通过快捷键完成。为避免和shell命令行的re
      查看prefix现有绑定键（即老板键）：
 
         tmux show-options -g | grep prefix</pre>
+
      要在tmux内置命令中修改及时生效，可在终端中输入以下命令：
 
          tmux set -g prefix C-x
