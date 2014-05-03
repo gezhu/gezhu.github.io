@@ -6,8 +6,6 @@ thread: 616
 ---
 
 
-![](http://ww4.sinaimg.cn/mw690/7b405dbbgw1e9ko16tk6dj20pc0fuwhw.jpg)
-![](https://onedrive.live.com/embed?cid=7DC53835EB03B0B5&resid=7DC53835EB03B0B5%21164&authkey=ABHuS1k6ZN_ikf8)
-
+![](http://i1156.photobucket.com/albums/p578/zhulianhua121/IMGP1826-9_zps4a429613.jpg)
 
 来了，就留下你的足迹吧。
