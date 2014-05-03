@@ -123,8 +123,8 @@ line-height:60px;
 }
 
 h3 {
-line-height:45px;
 font-size:18px;
+line-height:45px;
 }
 
 h6 {
@@ -251,7 +251,7 @@ padding:0 3px 2px;
 
 code {
 color:#d14;
-background-color:#D0D0D0;
+background-color:#f0f0f0;
 border:1px solid #e1e1e8;
 padding:3px 4px;
 }
