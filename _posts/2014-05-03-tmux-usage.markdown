@@ -11,7 +11,7 @@ tags:
 
 主要参考自FreeBSDChina的[wiki](https://wiki.freebsdchina.org/software/t/tmux)。
 
-##快捷键
+###配置
 tmux里面所有操作都通过快捷键完成。为避免和shell命令行的readline快捷键冲突，
 在触发所有快捷键操作前都必须先按**老板键**激活控制台。tmux安装后默认的**老板键**
 是`Ctrl+b`， 这个组合键是shell命令行的退格键, 所以在tmux要按两下`Ctrl+b`才能退一格，
@@ -35,15 +35,26 @@ tmux里面所有操作都通过快捷键完成。为避免和shell命令行的re
          tmux unbind C-b 
          tmux bind C-x send-prefix
 
-###系统操作
+###常用操作
 
-###窗口操作
-
-###面板操作
-
-
-##会话管理
+* `C-b :` 进入命令行模式
+* `C-b ?` 列出所有快捷键
+* `C-b [` 进入赋值模式(太有用了!),按空格键开始复制,回车确认！
+* `C-b ]` 粘贴
 
 
-##Fun
-[这里](https://github.com/rnons/HadouRex)有个小玩意儿，可以使用terminal听音乐。
+###Widdow操作
+
+###Pane操作
+
+
+##session操作
+
+* `C-b d`  deattch当前的session
+* `C-b C-z` 挂起当前的session
+* `$tmux ls` 显示tmux的所有session
+* `C-b $` 可以重命名当前的session
+
+
+##其他资料
+* [tmux](http://wiki.tankywoo.com/tool/tmux.html)
