@@ -32,5 +32,7 @@ GitHub : [http://github.com/{{ site.github }}](http://github.com/{{ site.github 
 
 暂无
 
+博客图片外链由[PhotoBucket](http://www.photobucket.com/)提供。
+
 ----
 
