@@ -54,6 +54,9 @@ tmux里面所有操作都通过快捷键完成。为避免和shell命令行的re
 * `C-b C-z` 挂起当前的session
 * `$tmux ls` 显示tmux的所有session
 * `C-b $` 可以重命名当前的session
+* `tmux attach [-t sessionname]` 恢复session。（有了这个就不怕玩得忘了工作:smaile:）
+
+
 
 
 ##其他资料
