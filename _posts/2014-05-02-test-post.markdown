@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "github 多个账号"
+title: "jekyll 功能测试"
 categories:
 - Linux
 tags:
