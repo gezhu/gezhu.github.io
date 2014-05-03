@@ -38,6 +38,7 @@ tmux里面所有操作都通过快捷键完成。为避免和shell命令行的re
          tmux unbind C-b 
          tmux bind C-x send-prefix
 
+
 ###常用操作
 
 ----
@@ -51,6 +52,7 @@ tmux里面所有操作都通过快捷键完成。为避免和shell命令行的re
 ###Widdow操作
 ----
 
+
 ###Pane操作
 
 ----
@@ -59,7 +61,6 @@ tmux里面所有操作都通过快捷键完成。为避免和shell命令行的re
 * `C-b %` 竖直分割
 * `C-b %` 竖直分割
 * `C-b Alt+Arrow` 调整Pane大小
-
 
 
 ##session操作
