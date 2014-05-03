@@ -44,3 +44,6 @@ tmux里面所有操作都通过快捷键完成。为避免和shell命令行的re
 
 ##会话管理
 
+
+##Fun
+[这里](https://github.com/rnons/HadouRex)有个小玩意儿，可以使用terminal听音乐。
