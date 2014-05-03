@@ -6,6 +6,8 @@ categories:
 tags:
 - linux, git
 
+---
+
 主要参考自FreeBSDChina的[wiki](https://wiki.freebsdchina.org/software/t/tmux)。
 
 ##快捷键
