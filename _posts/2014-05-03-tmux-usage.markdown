@@ -19,6 +19,7 @@ tmux里面所有操作都通过快捷键完成。为避免和shell命令行的re
 
 * 永久修改：
     编辑用户级tmux配置文件`~/.tmux.conf`，添加如下几行
+
         set -g prefix C-x
         unbind C-b
         bind C-x send-prefix
@@ -26,8 +27,10 @@ tmux里面所有操作都通过快捷键完成。为避免和shell命令行的re
 
 * 临时修改
      查看prefix现有绑定键（即老板键）：
+
          tmux show-options -g | grep prefix
      要在tmux内置命令中修改及时生效，可在终端中输入以下命令：
+
          tmux set -g prefix C-x
          tmux unbind C-b 
          tmux bind C-x send-prefix
