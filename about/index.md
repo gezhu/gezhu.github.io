@@ -5,9 +5,8 @@ comments: no
 
 ---
 
-研究僧一枚，目前从事CFD研究工作。     
-
-热爱Linux，开源爱好者，github等。            
+研究僧一枚，目前从事CFD研究工作。
+喜欢coding！
 
 
 ----
