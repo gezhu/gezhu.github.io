@@ -13,8 +13,27 @@ tags:
 
 ##快捷键
 tmux里面所有操作都通过快捷键完成。为避免和shell命令行的readline快捷键冲突，
-在触发所有快捷键操作前都必须先按"*老板键*"激活控制台。tmux安装后默认的"*老板键*"
-是`Ctrl+B`。
+在触发所有快捷键操作前都必须先按**老板键**激活控制台。tmux安装后默认的**老板键**
+是`Ctrl+b`， 这个组合键是shell命令行的退格键, 所以在tmux要按两下`Ctrl+b`才能退一格，
+不慎方便。发现`Ctrl+x`这个组合键用得比较少，可以把tmux的老板键换成`Ctrl+x`。
+
+* 永久修改：
+    编辑用户级tmux配置文件`~/.tmux.conf`，添加如下几行
+    <pre>
+      set -g prefix C-x
+      unbind C-b
+      bind C-x send-prefix
+    </pre>
+    重新启动tmux生效。
+
+* 临时修改
+     查看prefix现有绑定键（即老板键）：
+     <pre>tmux show-options -g | grep prefix</pre>
+     要在tmux内置命令中修改及时生效，可在终端中输入以下命令：
+         tmux set -g prefix C-x
+
+         tmux unbind C-b 
+         tmux bind C-x send-prefix
 
 ###系统操作
 
