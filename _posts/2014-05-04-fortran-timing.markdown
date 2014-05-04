@@ -14,7 +14,7 @@ Fotran 计时函数， 注意区分*CPU时间*和*系统时间* 。
 *  Fortran 77 : etime()
     {% highlight fortran %}
     call etime(tarray,t0)
-    ... ...
+    ! ... ...
     call etime(tarray,t1)
     print *, 'Elapsed time:', t1 - t0
     {% endhighlight %}
@@ -26,10 +26,10 @@ Fotran 计时函数， 注意区分*CPU时间*和*系统时间* 。
     integer ( kind = 4  ) clock_count2
     integer ( kind = 4  ) clock_max
     integer ( kind = 4  ) clock_rate
-    ... ...
+    ! ... ...
     call system_clock ( clock_count1, clock_rate, clock_max  )
     do i = 1, n
-     ...some big calculation...
+    ! ...some big calculation...
     end do
     call system_clock ( clock_count2, clock_rate, clock_max  )
     write ( *, *  ) 'Elapsed real time = ', real ( t2 - t1  ) 
@@ -40,10 +40,10 @@ Fotran 计时函数， 注意区分*CPU时间*和*系统时间* 。
     {% highlight fortran %}
     real (kind=8) t1
     real (kind=8) t2
-    ... ...
+    ! ... ...
     call cpu_time ( t1  )
     do i = 1, n
-       ...some big calculation...
+       ! ...some big calculation...
     end do
     call cpu_time ( t2  )
     write ( *, *  ) 'Elapsed CPU time = ', t2 - t1
