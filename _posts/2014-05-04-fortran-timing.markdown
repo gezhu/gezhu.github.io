@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Fortran 内建函数"
+title: "Fortran 计时函数"
 categories:
 - tech
 tags:
