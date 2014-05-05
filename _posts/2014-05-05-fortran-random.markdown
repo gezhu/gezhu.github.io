@@ -8,8 +8,10 @@ tags:
 
 
 ---
+先写个利用系统时间设置随即数种子的函数`init_random_seed()`，放到
+一个模块文件里面，便于重复利用。
+在主函数里面加载这个模块，调用一次这个`init_random_seed()`函数。
 
-主函数里面调用一次这个`random`模块里面的`init_random_seed()`函数
 `random.f90`:
     {% highlight fortran %}
     module random
@@ -27,7 +29,9 @@ tags:
     end module random
     {% endhighlight %}
 
-测试：`test_random.f90`
+调用测试一下:
+
+`test_random.f90`:
     {% highlight fortran %}
     program test_rand
         use random
