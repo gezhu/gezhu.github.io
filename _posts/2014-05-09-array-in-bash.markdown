@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Bash 中的数学计算"
+title: "Bash 中的数组"
 categories:
 - tech
 tags:
