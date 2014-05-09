@@ -5,6 +5,7 @@ categories:
 - tech
 tags:
 - bash
+- linux
 
 ---
 
