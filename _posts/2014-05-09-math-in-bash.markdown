@@ -39,7 +39,6 @@ tags:
 =========
 需要借助其他程序，这里用介绍`bc`, `bc`是linux上一个任意精度
 的计算程序。
-
         $ bc -l
         bc 1.06.95
         Copyright 1991-1994, 1997, 1998, 2000, 2004, 2006 Free Software Foundation, Inc.
