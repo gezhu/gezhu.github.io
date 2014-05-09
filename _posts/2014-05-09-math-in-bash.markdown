@@ -6,8 +6,7 @@ categories:
 tags:
 - bash
 
-
-----
+---
 
 主要参考[这里](https://www.shell-tips.com/2010/06/14/performing-math-calculation-in-bash/)
 
