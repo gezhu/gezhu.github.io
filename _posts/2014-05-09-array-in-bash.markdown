@@ -11,9 +11,9 @@ tags:
 
 
 * 声明一个数组`array`
-{% highlight bash %}
-declare -a array
-{% endhighlight %}
+  {% highlight bash %}
+  declare -a array
+  {% endhighlight %}
 
     其实也可以不用声明，直接用赋值语句初始化一个数组，Bash会默认为它就是个数组
 
