@@ -14,18 +14,17 @@ tags:
   {% highlight bash %}
   declare -a array
   {% endhighlight %}
-
-    其实也可以不用声明，直接用赋值语句初始化一个数组，Bash会默认为它就是个数组
+  其实也可以不用声明，直接用赋值语句初始化一个数组，Bash会默认为它就是个数组
 
 * 数组赋值
-{% highlight bash %}
-array=(var1 var2 var3 ... varN)
-array=([0]=var1 [1]=var2 [2]=var3 ... [n]=varN)
-array[0]=var1
-arrya[1]=var2
-#...
-array[n]=varN
-{% endhighlight %}
+  {% highlight bash %}
+  array=(var1 var2 var3 ... varN)
+  array=([0]=var1 [1]=var2 [2]=var3 ... [n]=varN)
+  array[0]=var1
+  arrya[1]=var2
+  #...
+  array[n]=varN
+  {% endhighlight %}
 
 * 引用数组
     {% highlight bash %}
