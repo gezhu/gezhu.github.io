@@ -1,0 +1,11 @@
+---
+layout: post
+title: "samba Windows映射多个网络磁盘"
+categories:
+- tech
+tags:
+- servers
+
+samba设置好后, 在Windows上一个Unix账户不能同时连接两个共享目录, 不知道为何Windows有这个傻x的规则。
+[这里](http://superuser.com/questions/95872/sambawindows-allow-multiple-connections-by-different-users)
+有个解决办法。
