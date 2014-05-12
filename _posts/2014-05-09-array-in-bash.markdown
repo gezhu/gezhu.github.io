@@ -40,4 +40,4 @@ tags:
     done
     {% endhighlight %}
 
-* 数组长度 `${#array[@]}`  或者  `${#array[*]}
+* 数组长度 `${#array[@]}`  或者  `${#array[*]}`
