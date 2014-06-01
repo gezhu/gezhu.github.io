@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "太容易掉进坑了"
+title: "数值格式"
 categories:
 - Study
 tags:
