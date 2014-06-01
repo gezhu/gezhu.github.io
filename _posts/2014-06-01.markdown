@@ -1,0 +1,11 @@
+---
+layout: post
+title: "太容易掉进坑了"
+categories:
+- Study
+tags:
+- kuoyan
+
+---
+
+数值格式教程， online版本[点击这里](http://www.astro.uu.se/~bf/course/numhd_course/Contents.html)：
