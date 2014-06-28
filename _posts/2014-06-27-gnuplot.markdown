@@ -80,10 +80,10 @@ term 需要设为epslatex, 生成.tex和.eps文件, 编译.tex可以生成图片
 
 交互
 ----
-* 多个窗口
+多个窗口
 
     set term wtx 0
     plot xxx
     set term wtx 1
 
-* 窗口操作快捷键
+窗口操作快捷键
