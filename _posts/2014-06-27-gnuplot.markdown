@@ -1,0 +1,81 @@
+---
+layout: post
+title: "gnuplot notes"
+categories:
+- tech
+tags:
+- plot
+
+
+---
+
+Link 
+* [](http://www.gnuplotting.org/output-terminals/)
+* [The Impossible Graphics](http://www.phyast.pitt.edu/~zov1/gnuplot/html/intro.html)
+
+输出相关
+========
+
+输出eps
+-------
+默认黑白, 不能处理中文：
+    set terminal postscript eps
+    set output "a.eps"
+    plot
+    ...
+    set output # 此处也可以改成 unset output
+    set term wxt
+设置颜色、字体等属性
+    set term postscript eps color solid lw 2 "Helvetica" 20
+
+输出pdf
+-------
+可以输出中文, 可以使用OS字体, pdfcairo只有windows上可用，不知道为什么,
+    set term pdfcairo font "Times New Roman, 8"
+测试发现在windows上使用，必须使用中文字体，中文才能正常显示
+
+
+LaTeX支持
+---------
+term 需要设为epslatex, 生成.tex和.eps文件, 编译.tex可以生成图片
+    set term epslatex standalone lw 2 color 11
+    set title "Function $\displaystyle \frac{\sin(x)}{x}$"
+    set output "a.tex"
+    plot ...
+    set output
+
+默认配置
+--------
+.gunplot 文件, 可以自定义字符串
+示例:
+    set macros
+    # search for functions or data files in these directories
+    #set loadpath '/usr/local/lib/gnuplot'
+    # add default line colors
+    set style line 1 lc rgb '#0060ad' lt 1 lw 2 pt 5   # blue
+    set style line 2 lc rgb '#dd181f' lt 1 lw 2 pt 7   # red
+    # add macros to select the desired line style
+    BLUE = "1"
+    RED = "2"
+    # add macros to select a desired terminal
+    WXT = "set terminal wxt size 350,262 enhanced font 'Verdana,10' \
+       persist"
+    PNG = "set terminal pngcairo size 350,262 enhanced font 'Verdana,10'"
+    SVG = "set terminal svg size 350,262 fname \
+       'Verdana, Helvetica, Arial, sans-serif' fsize = 10"
+
+使用：
+@宏,替代
+
+保存和加载命令
+--------------
+加载 `load "work.gnu"`
+
+交互
+----
+* 多个窗口
+    set term wtx 0
+    plot xxx
+    set term wtx 1
+
+* 窗口操作快捷键
