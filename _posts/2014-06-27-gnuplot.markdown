@@ -10,7 +10,7 @@ tags:
 ---
 
 Link 
-* [](http://www.gnuplotting.org/output-terminals/)
+* [Output Termical](http://www.gnuplotting.org/output-terminals/)
 * [The Impossible Graphics](http://www.phyast.pitt.edu/~zov1/gnuplot/html/intro.html)
 
 输出相关
@@ -19,25 +19,31 @@ Link
 输出eps
 -------
 默认黑白, 不能处理中文：
+
     set terminal postscript eps
     set output "a.eps"
     plot
     ...
     set output # 此处也可以改成 unset output
     set term wxt
+
 设置颜色、字体等属性
+
     set term postscript eps color solid lw 2 "Helvetica" 20
 
 输出pdf
 -------
 可以输出中文, 可以使用OS字体, pdfcairo只有windows上可用，不知道为什么,
+
     set term pdfcairo font "Times New Roman, 8"
+
 测试发现在windows上使用，必须使用中文字体，中文才能正常显示
 
 
 LaTeX支持
 ---------
 term 需要设为epslatex, 生成.tex和.eps文件, 编译.tex可以生成图片
+
     set term epslatex standalone lw 2 color 11
     set title "Function $\displaystyle \frac{\sin(x)}{x}$"
     set output "a.tex"
@@ -48,6 +54,7 @@ term 需要设为epslatex, 生成.tex和.eps文件, 编译.tex可以生成图片
 --------
 .gunplot 文件, 可以自定义字符串
 示例:
+
     set macros
     # search for functions or data files in these directories
     #set loadpath '/usr/local/lib/gnuplot'
@@ -74,6 +81,7 @@ term 需要设为epslatex, 生成.tex和.eps文件, 编译.tex可以生成图片
 交互
 ----
 * 多个窗口
+
     set term wtx 0
     plot xxx
     set term wtx 1
