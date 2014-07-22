@@ -20,7 +20,6 @@ tags:
 ![碑林拓印](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140713_08_48_14_Pro_zps317ad9e4.jpg)
 ![碑林石刻艺术馆](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140713_09_17_16_Pro_zps64f21628.jpg)
 
-![北峰](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/dark_a_zps01db3e29.jpg)
 ![西峰](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140719_19_18_45_Pro_zpsa8566071.jpg)
 ![西峰](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140720_07_39_48_Pro_zpsa4e16375.jpg)
 
