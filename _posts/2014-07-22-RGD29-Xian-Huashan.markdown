@@ -21,8 +21,8 @@ tags:
 
 ![西峰](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140719_19_18_45_Pro_zpsa8566071.jpg)
 ![西峰](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140720_07_39_48_Pro_zpsa4e16375.jpg)
-![](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140720_07_24_40_Pro_zps438965cc.jpg)
-![](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140720_05_52_14_Pro_zps6872ea90.jpg)
+![](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140720_07_24_40_Pro_zps438965cc-1.jpg)
+![](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140720_05_52_14_Pro_zps6872ea90-1.jpg)
 
 ![告别会](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/dark_a_zps01db3e29.jpg)
 
