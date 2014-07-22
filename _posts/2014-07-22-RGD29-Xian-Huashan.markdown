@@ -15,14 +15,17 @@ tags:
 提前一天去了，在西安溜达了大半天，去了碑林、古城墙、钟鼓楼、回民街, 会议还组织去了小雁塔、曲江。
 西安气温能赶上武汉，虽然湿度小得多。
 
-![西安城](https://www.dropbox.com/s/zxxcs21jw5sx0kn/WP_20140712_17_21_32_Pro.jpg)
-![古城墙](https://www.dropbox.com/s/tk95gze39z7vuc0/WP_20140713_07_57_57_Pro.jpg)
+![古城墙](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140713_07_57_57_Pro_zps195718bb.jpg)
 ![肉夹馍](https://www.dropbox.com/s/tk95gze39z7vuc0/WP_20140713_07_57_57_Pro.jpg)
-![碧昂比昂面](https://www.dropbox.com/s/hwiibfati0r546e/WP_20140712_17_51_04_Pro.jpg)
+![碧昂比昂面](
 ![碑林拓印](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140713_08_48_14_Pro_zps317ad9e4.jpg)
-![碑林石刻艺术馆](https://www.dropbox.com/s/kcu5e6mx5s4c9zw/WP_20140713_08_48_14_Pro.jpg)
+![碑林石刻艺术馆](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140713_09_17_16_Pro_zps64f21628.jpg)
 
+![北峰](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/dark_a_zps01db3e29.jpg)
+![西峰](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140719_19_18_45_Pro_zpsa8566071.jpg)
+![西峰](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140720_07_39_48_Pro_zpsa4e16375.jpg)
 
+![告别会](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/dark_a_zps01db3e29.jpg)
 
 
 
