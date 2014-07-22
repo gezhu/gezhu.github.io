@@ -16,7 +16,6 @@ tags:
 西安气温能赶上武汉，虽然湿度小得多。
 
 ![古城墙](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140713_07_57_57_Pro_zps195718bb.jpg)
-![肉夹馍](https://www.dropbox.com/s/tk95gze39z7vuc0/WP_20140713_07_57_57_Pro.jpg)
 ![碑林拓印](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140713_08_48_14_Pro_zps317ad9e4.jpg)
 ![碑林石刻艺术馆](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140713_09_17_16_Pro_zps64f21628.jpg)
 
