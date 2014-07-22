@@ -40,6 +40,14 @@ Link
 测试发现在windows上使用，必须使用中文字体，中文才能正常显示
 
 
+字体
+----
+ set term wxt enhanced font 'Times New Roman, 12'
+
+图例
+----
+ set key xxx
+
 LaTeX支持
 ---------
 term 需要设为epslatex, 生成.tex和.eps文件, 编译.tex可以生成图片
