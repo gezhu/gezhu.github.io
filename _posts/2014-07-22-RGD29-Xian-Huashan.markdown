@@ -19,7 +19,7 @@ tags:
 ![古城墙](https://www.dropbox.com/s/tk95gze39z7vuc0/WP_20140713_07_57_57_Pro.jpg)
 ![肉夹馍](https://www.dropbox.com/s/tk95gze39z7vuc0/WP_20140713_07_57_57_Pro.jpg)
 ![碧昂比昂面](https://www.dropbox.com/s/hwiibfati0r546e/WP_20140712_17_51_04_Pro.jpg)
-![碑林拓印](https://www.dropbox.com/s/kcu5e6mx5s4c9zw/WP_20140713_08_48_14_Pro.jpg)
+![碑林拓印](http://i1156.photobucket.com/albums/p578/zhulianhua121/Xi-an/WP_20140713_08_48_14_Pro_zps317ad9e4.jpg)
 ![碑林石刻艺术馆](https://www.dropbox.com/s/kcu5e6mx5s4c9zw/WP_20140713_08_48_14_Pro.jpg)
 
 
