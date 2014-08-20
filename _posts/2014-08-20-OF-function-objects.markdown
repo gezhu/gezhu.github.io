@@ -8,7 +8,7 @@ tags:
 
 ---
 
-{% highlight %}
+{% highlight c %}
 functions
 (
     fieldAverage1
