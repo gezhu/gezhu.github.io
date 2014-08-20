@@ -39,5 +39,4 @@ functions
         );
     }
 );
-
 {% endhighlight %}
