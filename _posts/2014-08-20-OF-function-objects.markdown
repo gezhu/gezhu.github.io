@@ -8,7 +8,7 @@ tags:
 
 ---
 
-{% highlight c++ %}
+{% highlight %}
 functions
 (
     fieldAverage1
