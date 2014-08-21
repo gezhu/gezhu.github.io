@@ -8,7 +8,7 @@ tags:
 
 ---
 
-{% highlight c %}
+``` c++
 functions
 (
     fieldAverage1
@@ -39,4 +39,4 @@ functions
         );
     }
 );
-{% endhighlight %}
+```
