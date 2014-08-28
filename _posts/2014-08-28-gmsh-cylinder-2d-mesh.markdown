@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "A block structured 2D gmsh .geo file for flow past a cylinder"
+title: "Block structured 2D gmsh .geo file for flow past a cylinder"
 categories:
 - tech
 tags:
@@ -10,6 +10,9 @@ tags:
 ---
 
 I found this file in this cfd-online thread [#12](http://www.cfd-online.com/Forums/openfoam-pre-processing/131044-oscillating-cylinder-dynamic-mesh.html#12)
+
+This is the mesh:
+![final mesh](http://i1156.photobucket.com/albums/p578/zhulianhua121/cylinder-2D_zps08bf3d64.jpg)
 
 ```
 D = 1.0;
