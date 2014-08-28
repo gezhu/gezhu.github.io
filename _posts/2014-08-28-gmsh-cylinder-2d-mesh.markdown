@@ -9,7 +9,7 @@ tags:
 
 ---
 
-I found this file in this cfd-online thread [#12](http://www.cfd-online.com/Forums/openfoam-pre-processing/131044-oscillating-cylinder-dynamic-mesh.html)
+I found this file in this cfd-online thread [#12](http://www.cfd-online.com/Forums/openfoam-pre-processing/131044-oscillating-cylinder-dynamic-mesh.html#12)
 
 ```
 D = 1.0;
