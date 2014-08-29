@@ -57,7 +57,7 @@ Extrude {0, 0, 0.01} {
   Recombine;
 }
 
-Physical Volume("flowDomain") = {1};
+Physical Volume("flowDomain") = {1}; //这一行不能少！！
 Physical Surface("cylinderWall") = {61, 57, 53, 49};
 Physical Surface("freeStream") = {33, 37, 41, 45};
 Physical Surface("frontAndBack") = {62, 20};
