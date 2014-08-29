@@ -12,6 +12,7 @@ tags:
 Link 
 * [Output Termical](http://www.gnuplotting.org/output-terminals/)
 * [The Impossible Graphics](http://www.phyast.pitt.edu/~zov1/gnuplot/html/intro.html)
+* [gnuplot系列博文,赞博主](http://blog.sciencenet.cn/home.php?mod=space&uid=373392&do=blog&view=me&classid=126484&from=space&page=1)
 
 输出相关
 ========
@@ -102,5 +103,4 @@ term 需要设为epslatex, 生成.tex和.eps文件, 编译.tex可以生成图片
 用第一列数据作为横坐标，用第二列数据的1/2作为纵坐标:
 
     plot "field.dat" u 1:($3/2) w lp
-
 
