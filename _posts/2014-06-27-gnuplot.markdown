@@ -10,9 +10,9 @@ tags:
 ---
 
 Link 
-* [Output Termical](http://www.gnuplotting.org/output-terminals/)
-* [The Impossible Graphics](http://www.phyast.pitt.edu/~zov1/gnuplot/html/intro.html)
-* [gnuplot系列博文,赞博主](http://blog.sciencenet.cn/home.php?mod=space&uid=373392&do=blog&view=me&classid=126484&from=space&page=1)
+*   [Output Termical](http://www.gnuplotting.org/output-terminals/)
+*   [The Impossible Graphics](http://www.phyast.pitt.edu/~zov1/gnuplot/html/intro.html)
+*   [gnuplot系列博文,赞博主](http://blog.sciencenet.cn/home.php?mod=space&uid=373392&do=blog&view=me&classid=126484&from=space&page=1)
 
 输出相关
 ========
