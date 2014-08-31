@@ -7,10 +7,12 @@ tags:
 - OpenFOAM
 
 
-----
+---
+
 Links
-*    [foamCalc](ihttp://www.openfoam.org/docs/user/cavity.php#dx5-24001)
-*    [foamCalcEx wiki](http://openfoamwiki.net/index.php/Contrib_foamCalcEx)
+
+*   [foamCalc](ihttp://www.openfoam.org/docs/user/cavity.php#dx5-24001)
+*   [foamCalcEx wiki](http://openfoamwiki.net/index.php/Contrib_foamCalcEx)
 
 官方的OpenFOAM提供的unities 中的foamCalc可以完成一些常见的后处理计算:
 ```
