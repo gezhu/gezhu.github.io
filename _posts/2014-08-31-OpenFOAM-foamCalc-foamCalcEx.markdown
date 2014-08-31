@@ -15,6 +15,7 @@ Links
 *   [foamCalcEx wiki](http://openfoamwiki.net/index.php/Contrib_foamCalcEx)
 
 官方的OpenFOAM提供的unities 中的foamCalc可以完成一些常见的后处理计算:
+
 ```
 8
 (
@@ -28,7 +29,9 @@ magSqr
 randomise
 )
 ```
+
 社区提供的foamCalcEx，功能跟多一点：
+
 ```
 20
 (
