@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "gmsh Extrude a plane suface with holes"
+title: "OpenFOAM foamCalc and foamCalcEx"
 categories:
 - tech
 tags:
