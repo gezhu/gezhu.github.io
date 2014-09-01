@@ -2,12 +2,11 @@
 layout: post
 title: "OpenFOAM 2.3.0 安装手记“ 
 categories:
-- kuoyan
+- tech
 tags:
 - OpenFOAM
 
 ---
-
 
 按照[这里](http://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-2.3.0/CentOS_SL_RHEL)
 的wiki把CentOS从6.4升级到了6.5， 从源代码编译安装
