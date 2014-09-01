@@ -8,6 +8,7 @@ tags:
 
 ---
 
+
 按照[这里](http://openfoamwiki.net/index.php/Installation/Linux/OpenFOAM-2.3.0/CentOS_SL_RHEL)
 的wiki把CentOS从6.4升级到了6.5， 从源代码编译安装
 了OpenFOAM-2.3.0. 这是目前OF的官方最新版。
