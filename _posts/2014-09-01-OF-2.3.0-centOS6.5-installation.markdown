@@ -1,0 +1,21 @@
+---
+layout: post
+title: "OpenFOAM 2.3.0 安装手记“ 
+categories:
+- kuoyan
+tags:
+- OpenFOAM
+
+---
+
+按照这里的wiki把CentOS从6.4升级到了6.5， 从源代码编译安装
+了OpenFOAM-2.3.0. 这是目前OF的官方最新版。
+安装过称相对复杂的原因是CentoOS的源里的gcc和Cmake等编译工具的版本
+太低了，达不到OpenFOAM安装的条件。所以编译OpenFOAM之前，先编译了
+一个local的编译环境。
+
+编译用的是system的OpenMPI。
+安装完了之后用`$FOAM_TUTORIALS/multiphase/interFoam/lamilar/damBreak/`
+算例测试，并行没有问题. OK, 目的达到了。
+
+我之前在OpenFOAM-2.2.x开发的dugksFOAM在这个2.3.0上编译通过。
