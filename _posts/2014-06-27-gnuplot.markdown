@@ -42,11 +42,21 @@ Link
 测试发现在windows上使用，必须使用中文字体，中文才能正常显示
 
 
-字体
+Fonts
 ----
- set term wxt enhanced font 'Times New Roman, 12'
+Set global font fot the terminal:
 
-图例
+    set term wxt enhanced font 'Times New Roman, 12'
+
+Set key font:
+
+    set key font ",14"
+
+Set  X tics font:
+
+    set xtics font "Verdana,20"
+
+Key
 ----
  set key xxx
 
