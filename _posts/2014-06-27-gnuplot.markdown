@@ -45,6 +45,7 @@ Link
 Fonts
 ----
 Set global font fot the terminal:
+
     set term wxt enhanced font 'Times New Roman, 12'
 
 Set key font:
@@ -57,7 +58,26 @@ Set  X tics font:
 
 Key
 ----
- set key xxx
+打开/关闭:
+
+    set key on/off
+    unset key
+
+位置, left(l), right(r), top(t), bottom(b), center(c)：
+
+    set key left/right/center top/bottom/center
+    set key l c
+    set key l tm  // m表示放在外面
+    set key below // 放在图的下面
+    set key at  0,1
+
+横排/竖排:
+
+    set key horiz/vert
+
+
+    
+
 
 LaTeX支持
 ---------
