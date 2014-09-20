@@ -45,7 +45,6 @@ Link
 Fonts
 ----
 Set global font fot the terminal:
-
     set term wxt enhanced font 'Times New Roman, 12'
 
 Set key font:
