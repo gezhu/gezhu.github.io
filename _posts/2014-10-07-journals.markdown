@@ -9,10 +9,27 @@ tags:
 
 ---
 
+General
+-------------------------
 *   JFM   (J Fluid Mech.)
 *   PoF   (Phy. Fluid)
 *   PRL   (Phy. R. L.)
 
 *   JCP   (J. Comp. Phy)
 *   PRE   (Phy. R. E)
-*   [IJTS (Int. J. of Thermal Sci.)](http://www.journals.elsevier.com/international-journal-of-thermal-sciences/)
+*   IJNMF(http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0363)
+    (International Journal for Numerical Methods in Fluids)
+
+Thermal related
+---------------
+*   [IJTS](http://www.journals.elsevier.com/international-journal-of-thermal-sciences/)
+    (Internal Journal of thermal science)
+*   [IJHMT](http://www.journals.elsevier.com/international-journal-of-heat-and-mass-transfer/)
+    (International Journal of Heat and Mass Transfer)
+*   [JHT](http://heattransfer.asmedigitalcollection.asme.org/journal.aspx) (J. Heat Transfer)
+*   [NHT](http://www.tandfonline.com/action/aboutThisJournal?journalCode=unht20#)(Num. Heat Transfer)
+
+
+
+Micro or rarefied flow
+----------------------
