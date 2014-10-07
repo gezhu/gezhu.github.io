@@ -17,15 +17,15 @@ General
 
 *   JCP   (J. Comp. Phy)
 *   PRE   (Phy. R. E)
-*   IJNMF(http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0363)
-    (International Journal for Numerical Methods in Fluids)
+*   [IJNMF](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0363)
+    (Int. J. Num. Methods in Fluids)
 
 Thermal related
 ---------------
 *   [IJTS](http://www.journals.elsevier.com/international-journal-of-thermal-sciences/)
-    (Internal Journal of thermal science)
+    (Int. J.  Thermal Sci.)
 *   [IJHMT](http://www.journals.elsevier.com/international-journal-of-heat-and-mass-transfer/)
-    (International Journal of Heat and Mass Transfer)
+    (Int. J.  Heat & Mass Transfer)
 *   [JHT](http://heattransfer.asmedigitalcollection.asme.org/journal.aspx) (J. Heat Transfer)
 *   [NHT](http://www.tandfonline.com/action/aboutThisJournal?journalCode=unht20#)(Num. Heat Transfer)
 
