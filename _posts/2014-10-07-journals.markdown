@@ -17,7 +17,7 @@ General
 
 *   JCP   (J. Comp. Phy)
 *   PRE   (Phy. R. E)
-*   [IJNMF](http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-0363)
+*   [IJNMF](http://onlinelibrary.wiley.com/journal/10.1002/\(ISSN\)1097-0363)
     (Int. J. Num. Methods in Fluids)
 
 Thermal related
