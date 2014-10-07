@@ -9,10 +9,10 @@ tags:
 
 ---
 
-*   JFM
-*   PoF
-*   PRL
+*   JFM   (J Fluid Mech.)
+*   PoF   (Phy. Fluid)
+*   PRL   (Phy. R. L.)
 
-*   JCP
-*   PRE
-*   [IJTS(International Journal of Thermal Sciences)](http://www.journals.elsevier.com/international-journal-of-thermal-sciences/)
+*   JCP   (J. Comp. Phy)
+*   PRE   (Phy. R. E)
+*   [IJTS (Int. J. of Thermal Sci.)](http://www.journals.elsevier.com/international-journal-of-thermal-sciences/)
