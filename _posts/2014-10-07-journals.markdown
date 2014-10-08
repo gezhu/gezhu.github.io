@@ -11,12 +11,15 @@ tags:
 
 General
 -------------------------
-*   JFM   (J Fluid Mech.)
-*   PoF   (Phy. Fluid)
+*   [JFM](http://journals.cambridge.org/action/displayJournal?jid=FLM)
+    (J Fluid Mech.)
+*   [PoF](http://scitation.aip.org/content/aip/journal/pof2)
+    (Phy. Fluid)
 *   PRL   (Phy. R. L.)
-
-*   JCP   (J. Comp. Phy)
-*   PRE   (Phy. R. E)
+*   [JCP](http://www.sciencedirect.com/science/journal/00219991)
+    (J. Comp. Phy.)
+*   [PRE](https://journals.aps.org/pre/recent)
+    (Phy. R. E)
 *   [IJNMF](http://onlinelibrary.wiley.com/journal/10.1002/\(ISSN\)1097-0363)
     (Int. J. Num. Methods in Fluids)
 
