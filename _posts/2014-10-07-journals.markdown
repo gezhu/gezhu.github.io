@@ -22,6 +22,8 @@ General
     (Phy. R. E)
 *   [IJNMF](http://onlinelibrary.wiley.com/journal/10.1002/\(ISSN\)1097-0363)
     (Int. J. Num. Methods in Fluids)
+*   [C&F](http://www.sciencedirect.com/science/journal/00457930)
+    [Compter and Fluid]
 
 Thermal related
 ---------------
@@ -36,3 +38,5 @@ Thermal related
 
 Micro or rarefied flow
 ----------------------
+*   [M&N](http://link.springer.com/journal/volumesAndIssues/10404)
+    (Microfluidics and Nanofluidics)
