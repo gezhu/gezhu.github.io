@@ -1,0 +1,12 @@
+---
+layout: post
+title: "vim tips"
+categories:
+- tech
+tags:
+- servers
+- vim
+
+---
+
+*    使用其他的make程序如wmake、cmake 编译和quickfix: `:set makepgr=wmake`
