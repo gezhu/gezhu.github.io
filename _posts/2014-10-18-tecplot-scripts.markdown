@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "tecplot tips"
+title: "tecplot scripts"
 categories:
 - tech
 tags:
