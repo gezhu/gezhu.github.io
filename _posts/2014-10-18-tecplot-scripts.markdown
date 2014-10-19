@@ -65,7 +65,6 @@ Create new frame
       HEIGHT = 3.4286
 
 Transprant
-
     $!FRAMELAYOUT ISTRANSPARENT = YES
 
 Frame link
@@ -84,3 +83,5 @@ Frame control
 
     $!FRAMECONTROL ACTIVATEPREVIOUS
 
+Frame rename
+    $!FRAMENAME = "DSMC"
