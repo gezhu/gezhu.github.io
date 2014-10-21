@@ -87,3 +87,36 @@ Frame control
 Frame rename
 
     $!FRAMENAME = "DSMC"
+
+Frame resize
+
+    $!FRAMELAYOUT WIDTH = 8
+    $!FRAMELAYOUT HEIGHT = 8
+
+Axis  edit
+----------
+Ticks
+
+    $!TWODAXIS XDETAIL{RANGEMAX = 1}
+    $!TWODAXIS YDETAIL{RANGEMAX = 1}
+    $!TWODAXIS XDETAIL{TICKS{TICKDIRECTION = OUT}
+
+Area
+    
+    $!TWODAXIS VIEWPORTPOSITION{X2 = 94}
+    $!TWODAXIS VIEWPORTPOSITION{Y2 = 94
+
+Grid Board Line
+
+    $!TWODAXIS GRIDAREA{DRAWBORDER = YES}
+
+
+Export 
+------
+Export to eps
+
+    $!EXPORTSETUP EXPORTFORMAT = EPS
+    $!EXPORTSETUP IMAGEWIDTH = 1050
+    $!EXPORTSETUP EXPORTFNAME = 'G:\3rd\cavity\export.eps'
+    $!EXPORT 
+      EXPORTREGION = CURRENTFRAM
