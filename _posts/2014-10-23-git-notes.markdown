@@ -14,6 +14,7 @@ tags:
 记录一些用到过的命令。
 
 `git-update-index` track or untrack files
+
 *   Do not track some file
         
         git update-index --assume-unchanged path/to/file
