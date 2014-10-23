@@ -1,0 +1,23 @@
+---
+layout: post
+title: "git 笔记"
+categories:
+- tech
+tags:
+
+- git
+
+
+---
+
+
+记录一些用到过的命令。
+
+*   Do not track some file
+        
+        git update-index --assume-unchanged path/to/file
+
+    Start keeping track again
+
+        git update-index --no-assume-unchanged path/to/file
+
