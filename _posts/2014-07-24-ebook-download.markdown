@@ -9,3 +9,4 @@ tags:
 ---
 
 * [BookZZ](http://bookzz.org/)
+* [LibGen](http://libgen.org/)
