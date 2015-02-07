@@ -7,6 +7,8 @@ tags:
 - vpn
 
 ---
+被逼得没办法了，自己掏银子搭建"科学上网"工具。买的是DO的vps, 最便宜的那种，$5每月，用的是paypal绑定银联卡支付的。 选的三藩市的机房，之前选的新加坡太不稳定了。
+vps上我装的是CentOS 7。下面这个是安装并配置vpn服务器(pptpd)的脚本：
 
     rpm -Uvh http://download.fedoraproject.org/pub/epel/beta/7/x86_64/epel-release-7-1.noarch.rpm
     yum -y install ppp pptpd
