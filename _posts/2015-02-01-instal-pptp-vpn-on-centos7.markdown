@@ -8,7 +8,7 @@ tags:
 
 ---
 被逼得没办法了，自己掏银子搭建"科学上网"工具。买的是DO的vps, 最便宜的那种，$5每月，用的是paypal绑定银联卡支付的。 选的三藩市的机房，之前选的新加坡太不稳定了。
-vps上我装的是CentOS 7。下面这个是安装并配置vpn服务器(pptpd)的脚本：
+vps上我装的是CentOS 7。下面这个是安装并配置vpn服务器(pptpd)的脚本:
 
     rpm -Uvh http://download.fedoraproject.org/pub/epel/beta/7/x86_64/epel-release-7-1.noarch.rpm
     yum -y install ppp pptpd
@@ -69,3 +69,7 @@ vps上我装的是CentOS 7。下面这个是安装并配置vpn服务器(pptpd)�
 
     systemctl start pptpd
     systemctl enable pptpd.service
+
+有两个问题需要注意下：
+* 上面脚本中的 ''/etc/ppp/chap-secrets''文件里面的USERNAME 和 PASSWORD要换成自己设置的vpn用户名和密码。
+* 注意iptable访问控制里要设置相关的端口打开。
