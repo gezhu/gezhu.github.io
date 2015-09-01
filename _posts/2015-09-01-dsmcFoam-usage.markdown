@@ -19,7 +19,7 @@ dsmcFoam 的架构：
 主要的源文件：
 
 *    [`dsmcFoam.C`](https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/applications/solvers/discreteMethods/dsmc/dsmcFoam/dsmcFoam.C)
-* `DsmcCloud.C` :  https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/src/lagrangian/dsmc/clouds/Templates/DsmcCloud/DsmcCloud.C
+*    [DsmcCloud.C`](https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/src/lagrangian/dsmc/clouds/Templates/DsmcCloud/DsmcCloud.C)
 *    [`DsmcCloud.H`](https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/src/lagrangian/dsmc/clouds/Templates/DsmcCloud/DsmcCloud.H)
 *    [`dsmcFields` function object](https://github.com/OpenFOAM/OpenFOAM-2.3.x/tree/master/src/postProcessing/functionObjects/utilities/dsmcFields)
 
@@ -62,11 +62,9 @@ int main(int argc, char *argv[])
 
 #### DsmcCloud 关键函数分析
 
-{% highlight cpp %}
-int main(int argc, char *argv[])
 `DsmcCloud::evolve()` 主要演化过程在这里
 
-```
+{% highlight cpp %}
 template<class ParcelType>
 void Foam::DsmcCloud<ParcelType>::evolve()
 {
@@ -518,10 +516,10 @@ writeInterval   100;
 表示计算1000步，每100步输出。
 1. 如果我们再注释掉`functions`部分, 也就是不求平均。运行dsmcFoam，也没有问题，不会报错。运行完会产生10个数据文件目录（1000/100=10）。
 
-    ```
-    [lhzhu@ws3 dsmc1]$ ls
-    0  1e-08  1e-09  2e-09  3e-09  4e-09  5e-09  6e-09  7e-09  8e-09  9e-09  constant  log  PyFoamHistory  system
-    ```
+```
+[lhzhu@ws3 dsmc1]$ ls
+0  1e-08  1e-09  2e-09  3e-09  4e-09  5e-09  6e-09  7e-09  8e-09  9e-09  constant  log  PyFoamHistory  system
+```
 
 每个目录里面只有当前步的统计出来的场(非时均)：
 
