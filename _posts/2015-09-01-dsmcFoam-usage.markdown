@@ -62,6 +62,8 @@ int main(int argc, char *argv[])
 
 #### DsmcCloud 关键函数分析
 
+{% highlight cpp %}
+int main(int argc, char *argv[])
 `DsmcCloud::evolve()` 主要演化过程在这里
 
 ```
@@ -93,11 +95,12 @@ void Foam::DsmcCloud<ParcelType>::evolve()
     // Calculate the volume field data
     calculateFields(); //<<------每个演化步都需要统计 rhoN_ rhoM_ linearKE_ ... 等等这些场为；
 }
-```
+{% endhighlight %}
 
 `DsmcCloud::resetFields()` 每个演化步都需要重置这些场为0，为开始统计做准备
 
-```
+
+{% highlight cpp %}
 template<class ParcelType>
 void Foam::DsmcCloud<ParcelType>::resetFields()
 {
@@ -123,12 +126,12 @@ void Foam::DsmcCloud<ParcelType>::resetFields()
         vector::zero
     );
 }
-```
+{% endhighlight %}
 
 `DsmcCloud::calculateFields()`: 统计场
 
 
-```
+{% highlight cpp %}
 template<class ParcelType>
 void Foam::DsmcCloud<ParcelType>::calculateFields()
 {
@@ -173,11 +176,13 @@ void Foam::DsmcCloud<ParcelType>::calculateFields()
     momentum *= nParticle_/mesh().cellVolumes();
     momentum_.correctBoundaryConditions();
 }
-```
+{% endhighlight %}
+
 
 看看`DsmcCloud`的构造函数，可以发现它主要存储哪些东西：
 
-```
+
+{% highlight cpp %}
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
 template<class ParcelType>
@@ -400,7 +405,7 @@ Foam::DsmcCloud<ParcelType>::DsmcCloud
         ParcelType::readFields(*this);
     }
 }
-```
+{% endhighlight %}
 
 可以发现`DsmcCloud`的演化过程十分清晰明了。就是内部记录了一些extensive fields，和 particle的位置、速度。然后每个演化步统计这些 extensive fields，然后执行迁移和碰撞，边界处理。这些extensive fields完全由新时刻的particle速度计算出来。
 
@@ -411,7 +416,8 @@ Foam::DsmcCloud<ParcelType>::DsmcCloud
 
 下面这个例子是一个dsmcFoam case里`controlDict`文件的`functions`部分:
 
-```
+
+{% highlight cpp %}
 functions // 这里面是设置了两个时间平均计算，一个是fieldAverage1，另一个是dsmcFields1
 {
     fieldAverage1
@@ -455,7 +461,7 @@ functions // 这里面是设置了两个时间平均计算，一个是fieldAvera
         outputControl   outputTime;
     }
 }
-```
+{% endhighlight %}
 
 这里面设置每个需要计算时均值的场的设置。包括`mean`,`prome2Mean`,`base`,`window`。时均场输出的文件名后面会多一个*Mean*。 如momentum的时均场为momentumMean。
 
@@ -551,7 +557,8 @@ SourceFiles
     IOdsmcFields.H
 ```
 
-```
+
+{% highlight cpp %}
 class dsmcFields
 {
     // Private data
@@ -628,11 +635,12 @@ public:
         virtual void movePoints(const polyMesh&)
         {}
 };
-```
+{% endhighlight %}
 
 `dsmcFields::write()`
 
-```
+
+{% highlight cpp %}
 void Foam::dsmcFields::write()
 {
     if (active_)
@@ -807,7 +815,7 @@ void Foam::dsmcFields::write()
         }
     }
 }
-```
+{% endhighlight %}
 
 明显可以发现`dsmcFields`所做的只是根据`fieldAverage1`输出的时均场来求出其他时均场，例如根据时均密度场和时均动量场来求出时均速度场。这个工作也可以由后处理工具`dsmcFieldsCalc`完成，而不是写成`controlDict`里面的function object。
 
