@@ -14,7 +14,7 @@ tags:
 分析这个solver的主要目的是弄清楚我用这个solver算热驱方腔流动问题为何速度场老是计算得有很大的噪音。即使统计了很长时间。我需要弄清楚这里面的场是如何平均的。
 
 dsmcFoam 的架构：
-![dsmcFoam structure](./image/dsmcFoam.png)
+
 
 主要的源文件：
 * `dsmcFoam.C` : https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/applications/solvers/discreteMethods/dsmc/dsmcFoam/dsmcFoam.C 
