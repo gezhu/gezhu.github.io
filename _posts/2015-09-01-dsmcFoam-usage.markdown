@@ -406,6 +406,7 @@ Foam::DsmcCloud<ParcelType>::DsmcCloud
 
 #### fieldAverage 分析
 在一个dsmcFoam的case里面，`controlDict` 文件里面要设置在求解过程中输出一些时间平均的场, 这由OpenFOAM本身提供的`fieldAverage` 和dsmcFOAM提供的`dsmcField` 这两个[Function object](http://cfd.direct/openfoam/user-guide/function-objects/)来完成。
+
 **NOTE**: 关于`fieldAverage` Function object到底是怎样进行时间平均的， [这篇博文](http://xiaopingqiu.github.io/2015/04/12/fieldAverage/)有很好的分析。
 
 下面这个例子是一个dsmcFoam case里`controlDict`文件的`functions`部分:
@@ -813,10 +814,11 @@ void Foam::dsmcFields::write()
 
 ####总结
 综上分析，有以下总结：
-*    用`fieldAverage`对宏观量场求时均是dsmcFoam里面输出宏观量场的最重要步骤。
-*   `window`控制对那一段时间求平均。如果不设置`window`就是从开始到当前所有步的平均。
-     如果设置`window`, 结合`base`  (`ITER`/`time`)，可以设置 从当前时间/步 往前多少s/步 求时均值。
-*   `dsmcFields` 辅助计算其他时均场如 `UMean`, `overallT`等等，它只是对`fieldAverage`输出的时均场做简单的加减乘除计算。
+
+*     用`fieldAverage`对宏观量场求时均是dsmcFoam里面输出宏观量场的最重要步骤。
+*     `window`控制对那一段时间求平均。如果不设置`window`就是从开始到当前所有步的平均。
+      如果设置`window`, 结合`base`  (`ITER`/`time`)，可以设置 从当前时间/步 往前多少s/步 求时均值。
+*     `dsmcFields` 辅助计算其他时均场如 `UMean`, `overallT`等等，它只是对`fieldAverage`输出的时均场做简单的加减乘除计算。
 
 ####如何解决我的问题？
 要算低速问题(Ma < 0.001)，`window`必须设置得足够大, 统计得出的速度场噪音才会足够小。
