@@ -18,10 +18,10 @@ dsmcFoam 的架构：
 
 主要的源文件：
 
-* `dsmcFoam.C` : https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/applications/solvers/discreteMethods/dsmc/dsmcFoam/dsmcFoam.C 
+*    `dsmcFoam.C` : https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/applications/solvers/discreteMethods/dsmc/dsmcFoam/dsmcFoam.C 
 * `DsmcCloud.C` :  https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/src/lagrangian/dsmc/clouds/Templates/DsmcCloud/DsmcCloud.C
-* `DsmcCloud.H` :  https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/src/lagrangian/dsmc/clouds/Templates/DsmcCloud/DsmcCloud.H
-* `dsmcFields` function object : https://github.com/OpenFOAM/OpenFOAM-2.3.x/tree/master/src/postProcessing/functionObjects/utilities/dsmcFields
+*    `DsmcCloud.H` :  https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/src/lagrangian/dsmc/clouds/Templates/DsmcCloud/DsmcCloud.H
+*    `dsmcFields` function object : https://github.com/OpenFOAM/OpenFOAM-2.3.x/tree/master/src/postProcessing/functionObjects/utilities/dsmcFields
 
 
 ####`dsmcFoma` 源码：
@@ -93,8 +93,8 @@ void Foam::DsmcCloud<ParcelType>::evolve()
     // Calculate the volume field data
     calculateFields(); //<<------每个演化步都需要统计 rhoN_ rhoM_ linearKE_ ... 等等这些场为；
 }
-
 ```
+
 `DsmcCloud::resetFields()` 每个演化步都需要重置这些场为0，为开始统计做准备
 
 ```
@@ -124,7 +124,9 @@ void Foam::DsmcCloud<ParcelType>::resetFields()
     );
 }
 ```
+
 `DsmcCloud::calculateFields()`统计场
+
 ```
 template<class ParcelType>
 void Foam::DsmcCloud<ParcelType>::calculateFields()
