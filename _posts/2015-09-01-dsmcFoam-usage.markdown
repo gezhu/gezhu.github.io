@@ -26,7 +26,7 @@ dsmcFoam 的架构：
 
 ####`dsmcFoma` 源码：
 
-```
+{% highlight cpp %}
 int main(int argc, char *argv[])
 {
     #include "setRootCase.H"
@@ -58,7 +58,7 @@ int main(int argc, char *argv[])
 
     return(0);
 }
-```
+{% endhighlight %}
 
 #### DsmcCloud 关键函数分析
 
@@ -126,6 +126,7 @@ void Foam::DsmcCloud<ParcelType>::resetFields()
 ```
 
 `DsmcCloud::calculateFields()`: 统计场
+
 
 ```
 template<class ParcelType>
