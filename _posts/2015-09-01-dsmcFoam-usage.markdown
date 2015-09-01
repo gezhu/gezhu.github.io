@@ -125,7 +125,7 @@ void Foam::DsmcCloud<ParcelType>::resetFields()
 }
 ```
 
-`DsmcCloud::calculateFields()`统计场
+`DsmcCloud::calculateFields()`: 统计场
 
 ```
 template<class ParcelType>
@@ -175,6 +175,7 @@ void Foam::DsmcCloud<ParcelType>::calculateFields()
 ```
 
 看看`DsmcCloud`的构造函数，可以发现它主要存储哪些东西：
+
 ```
 // * * * * * * * * * * * * * * * * Constructors  * * * * * * * * * * * * * * //
 
@@ -399,6 +400,7 @@ Foam::DsmcCloud<ParcelType>::DsmcCloud
     }
 }
 ```
+
 可以发现`DsmcCloud`的演化过程十分清晰明了。就是内部记录了一些extensive fields，和 particle的位置、速度。然后每个演化步统计这些 extensive fields，然后执行迁移和碰撞，边界处理。这些extensive fields完全由新时刻的particle速度计算出来。
 
 #### fieldAverage 分析
@@ -406,6 +408,7 @@ Foam::DsmcCloud<ParcelType>::DsmcCloud
 **NOTE**: 关于`fieldAverage` Function object到底是怎样进行时间平均的， [这篇博文](http://xiaopingqiu.github.io/2015/04/12/fieldAverage/)有很好的分析。
 
 下面这个例子是一个dsmcFoam case里`controlDict`文件的`functions`部分:
+
 ```
 functions // 这里面是设置了两个时间平均计算，一个是fieldAverage1，另一个是dsmcFields1
 {
@@ -450,21 +453,24 @@ functions // 这里面是设置了两个时间平均计算，一个是fieldAvera
         outputControl   outputTime;
     }
 }
-
 ```
+
 这里面设置每个需要计算时均值的场的设置。包括`mean`,`prome2Mean`,`base`,`window`。时均场输出的文件名后面会多一个*Mean*。 如momentum的时均场为momentumMean。
 
 上面的设置中`base`为`time`，发现计算过程中每个演化步(`DsmcCloud::evolve()`)都计算了时均场，log里面每个演化都会出现：
+
 ```
 fieldAverage fieldAverage1 output:
     Calculating averages
 ```
-*  如果不设置`window` : 每次计算的时均场都是从**求解开始到目前所有步**的时均场。
-*  如果设置了`window` :  
+
+*    如果不设置`window` : 每次计算的时均场都是从**求解开始到目前所有步**的时均场。
+*    如果设置了`window` :  
 >base用来指定作时间平均的基础，是基于时间步数(ITER)还是物理时间(time);  window用来作平均的时间段的长度，如果不设定，则求的是从开始到当前时间这个时间段的平均值。window的数值的实际含义依base而定，如果base是ITER，则window=20表示当前步及其前 19 个时间步从 20 个时间步内的平均，而如果base是time,则表示的是 20s 内的平均。
 
 
 在输出数据文件时（每evolve 100次）还会输出`fieldAverage1`设置的时均场(` writing average fields`)：
+
 ```
 fieldAverage fieldAverage1 output:
     Calculating averages
@@ -483,6 +489,7 @@ Calculating dsmcFields.
     p max/min : 67296.44015303567 42358.60866053814
 dsmcFields written.
 ```
+
 **NOTE**: 可以发现在`writing average fields`的时候`dsmcFields` function object被触发了，它计算`UMean`,`translationalT `,`internalT`,`overallT`,`pressure`等场。
 
 可以定义两个开关分别是`resetOnOutput`和`resetOnRestart`, 其意义是：
@@ -490,6 +497,7 @@ dsmcFields written.
 
 这里可能有个疑问，如果不做这两个时均计算会怎样？会不会影响计算过程？毕竟dsmc的计算过程不依赖于这些宏观量场以及它们的时均场。这个疑问是很自然的。可以通过一个例子分析一下：
 如果在`controlDict`文件里面如下设置
+
 ```
 startTime       0;
 stopAt          endTime;
@@ -498,28 +506,36 @@ deltaT          1e-11;
 writeControl    timeStep;
 writeInterval   100;
 ```
+
 表示计算1000步，每100步输出。
 1. 如果我们再注释掉`functions`部分, 也就是不求平均。运行dsmcFoam，也没有问题，不会报错。运行完会产生10个数据文件目录（1000/100=10）。
+
     ```
     [lhzhu@ws3 dsmc1]$ ls
     0  1e-08  1e-09  2e-09  3e-09  4e-09  5e-09  6e-09  7e-09  8e-09  9e-09  constant  log  PyFoamHistory  system
     ```
+
 每个目录里面只有当前步的统计出来的场(非时均)：
+
 ```
 [lhzhu@ws3 dsmc1]$ ls 1e-09
 boundaryT  boundaryU  dsmcRhoN  dsmcSigmaTcRMax  fD  iDof  internalE  lagrangian  linearKE  momentum  q  rhoM  rhoN  uniform
 ```
+
 2. 但是如果我们如果只注释掉`functions`里面的`fieldAverage1`部分，或者只去掉 `fieldAverage1`里面的任何一个时均场，则会报错。比如去掉`fD`的时均计算，会有Fatal Error如下：
+
 ```
 --> FOAM FATAL ERROR:
     request for volVectorField fDMean from objectRegistry region0 failed
 ```
+
 这个错误应该是在执行`dsmcFields` function object 时产生的。下面我们分析`dsmcFields`。
 
 ####dsmcFields分析
 源文件位置： https://github.com/OpenFOAM/OpenFOAM-2.3.x/tree/master/src/postProcessing/functionObjects/utilities/dsmcFields
 
 `dsmcFields.H`
+
 ```
 Description
     Calculate intensive fields:
@@ -534,7 +550,6 @@ SourceFiles
 ```
 
 ```
-
 class dsmcFields
 {
     // Private data
@@ -611,9 +626,10 @@ public:
         virtual void movePoints(const polyMesh&)
         {}
 };
-
 ```
+
 `dsmcFields::write()`
+
 ```
 void Foam::dsmcFields::write()
 {
@@ -790,15 +806,16 @@ void Foam::dsmcFields::write()
     }
 }
 ```
+
 明显可以发现`dsmcFields`所做的只是根据`fieldAverage1`输出的时均场来求出其他时均场，例如根据时均密度场和时均动量场来求出时均速度场。这个工作也可以由后处理工具`dsmcFieldsCalc`完成，而不是写成`controlDict`里面的function object。
 
 
 ####总结
 综上分析，有以下总结：
-* 用`fieldAverage`对宏观量场求时均是dsmcFoam里面输出宏观量场的最重要步骤。
-*  `window`控制对那一段时间求平均。如果不设置`window`就是从开始到当前所有步的平均。
-    如果设置`window`, 结合`base`  (`ITER`/`time`)，可以设置 从当前时间/步 往前多少s/步 求时均值。
-*  `dsmcFields` 辅助计算其他时均场如 `UMean`, `overallT`等等，它只是对`fieldAverage`输出的时均场做简单的加减乘除计算。
+*    用`fieldAverage`对宏观量场求时均是dsmcFoam里面输出宏观量场的最重要步骤。
+*   `window`控制对那一段时间求平均。如果不设置`window`就是从开始到当前所有步的平均。
+     如果设置`window`, 结合`base`  (`ITER`/`time`)，可以设置 从当前时间/步 往前多少s/步 求时均值。
+*   `dsmcFields` 辅助计算其他时均场如 `UMean`, `overallT`等等，它只是对`fieldAverage`输出的时均场做简单的加减乘除计算。
 
 ####如何解决我的问题？
 要算低速问题(Ma < 0.001)，`window`必须设置得足够大, 统计得出的速度场噪音才会足够小。
