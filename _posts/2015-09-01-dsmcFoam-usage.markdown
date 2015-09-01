@@ -17,6 +17,7 @@ dsmcFoam 的架构：
 
 
 主要的源文件：
+
 * `dsmcFoam.C` : https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/applications/solvers/discreteMethods/dsmc/dsmcFoam/dsmcFoam.C 
 * `DsmcCloud.C` :  https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/src/lagrangian/dsmc/clouds/Templates/DsmcCloud/DsmcCloud.C
 * `DsmcCloud.H` :  https://github.com/OpenFOAM/OpenFOAM-2.3.x/blob/master/src/lagrangian/dsmc/clouds/Templates/DsmcCloud/DsmcCloud.H
@@ -24,6 +25,7 @@ dsmcFoam 的架构：
 
 
 ####`dsmcFoma` 源码：
+
 ```
 int main(int argc, char *argv[])
 {
@@ -57,8 +59,11 @@ int main(int argc, char *argv[])
     return(0);
 }
 ```
+
 #### DsmcCloud 关键函数分析
+
 `DsmcCloud::evolve()` 主要演化过程在这里
+
 ```
 template<class ParcelType>
 void Foam::DsmcCloud<ParcelType>::evolve()
@@ -88,6 +93,7 @@ void Foam::DsmcCloud<ParcelType>::evolve()
     // Calculate the volume field data
     calculateFields(); //<<------每个演化步都需要统计 rhoN_ rhoM_ linearKE_ ... 等等这些场为；
 }
+
 ```
 `DsmcCloud::resetFields()` 每个演化步都需要重置这些场为0，为开始统计做准备
 
