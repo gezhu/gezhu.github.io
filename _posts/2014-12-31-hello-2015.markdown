@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Hello! 2015"
+categories:
+- life
+tags:
+- life
+
+---
+
+2014年马上结束了！真实越长大时间过得越快！
+目前正在实验室里通宵，已经连续在实验室呆了两个晚上了。
+
+2015, I'm comming!
